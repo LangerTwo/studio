@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+
+    <select id="lista"></select>
+
+
+    <script>
+      var colores = ['verde', 'rojo', 'azul', 'amarillo', 'blanco', 'negro', 'morado', 'rosa'];
+
+      var select = document.getElementById("lista");
+
+     colores.forEach(function(opcion, index) {
+        var option = document.createElement("option");
+          option.value = opcion;
+          option.text = opcion;
+          option.id = "opcion_" + index;
+        select.appendChild(option);
+        
+        select.addEventListener("change", function(){
+        var opsele = select.value;
+        console.log("color:", opsele);
+      });
+
+
+        /*console.log("color:", option.value);*/
+      });
+
+      
+   
+     /*select.addEventListener("cambio", function(){
+        var opsele = select.value;
+        console.log("color:", opsele);
+      });*/
+    
+        
+       
+    </script>
+   
+</body>
+</html>

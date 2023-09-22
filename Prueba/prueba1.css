@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-padre{
+    /* width: 1024px;
+     height: auto;
+     display: flex;
+     justify-content: space-between;
+     position: relative;*/
+     border: 1px solid red;
+     display:grid;
+     grid-template-columns:
+     repeat(
+       auto-fit,
+       minmax(150px,1fr)
+     );
+   gap: 32px;
+ }
+ 
+.container-padre > .container-hijo{
+   width: 100%;
+   height:auto;
+ }
+
+
+/*el tamaño de cada container*/
+.container-hijo{
+    width: 250px;
+    height: 620px;
+    position: relative;
+    /*left: 50%;
+    transform: translateX(-50%);*/
+}
+
+/*diseño de texto*/
+.contai-txt{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*posicion del titulo*/
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*color parrafo 1*/
+.par1{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/*color parrafo 2*/
+.par2{
+    color: black;
+}
+
+/*posicion de los botones*/
+.contai-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+/*diseño btn 1*/
+.btn1{
+  padding: 10px 20px;
+  background-color: #034885;
+  color: white;
+  text-decoration: none;
+  border: 1px  black;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-transform:uppercase; 
+}
+
+/*diseño btn 2*/
+.btn2{
+    padding: 10px 20px; 
+    background-color: #fff;
+    color: #034885;
+    text-decoration: none;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    text-transform:uppercase;
+}
+
+
+.contai-list{
+    padding-left: 20px;
+    /* font-size: 18px;
+    line-height:24px;
+    font-style: regular;
+    text-align:left;
+    vertical-align:top;*/
+}
+
+.contai-list li{
+    margin-bottom: 5px;
+}
+
+.img{
+   
+}
+
+.imagen{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*@media (max-width: 600px){
+    .container-padre{
+        border: 1px solid green;
+        width: 250px;
+        height: 1900px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: column
+    }
+}*/
+
+
+
+
+    
+

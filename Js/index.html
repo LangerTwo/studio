@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" value=",3|C-Mild,4|C-Hybrid,5|C-Electric,2|C-Todos" class="stxt" id="ftxt"><br>
+        <!--<button id="save">Enviar</button>-->
+        <input type="text" hidden class="stxt" id="mostar-ftxt">
+    </div>
+
+    <style>
+        .stxt{
+            width: 400px;
+        }
+    </style>
+
+    <script>
+        
+       //convertir un input en un array
+       var element = document.getElementById('ftxt');
+        var value = element.value;
+       var result = value.split(',');
+
+      //eliminar 1er element en un array
+       var numeros = result;
+       numeros.shift();
+
+
+       
+    </script>
+</body>
+</html>
